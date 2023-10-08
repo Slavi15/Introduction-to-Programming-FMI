@@ -9,7 +9,10 @@ int main()
 
     cin >> m >> n;
 
-    int biggerNumber = (m * (bool)(m / n)) + (n * (bool)(n / m));
+    bool mIsBigger = (m / n);
+    bool nIsBigger = (n / m);
+
+    int biggerNumber = (m * mIsBigger) + (n * nIsBigger);
 
     // int biggerNumber = max(m, n);
     // std::max() imported from <algorithm>
