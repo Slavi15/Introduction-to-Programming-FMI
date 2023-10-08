@@ -10,7 +10,7 @@ int main()
 
     cin >> num;
 
-    char isValid = (num >= 2 && num <= 6) && cout << "Yes" << endl || cout << "No" << endl;
+    bool isValid = (num >= 2 && num <= 6) && cout << "Yes" << endl || cout << "No" << endl;
 
     return 0;
 }
