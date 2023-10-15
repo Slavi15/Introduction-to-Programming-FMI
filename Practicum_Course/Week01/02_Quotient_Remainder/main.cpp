@@ -6,7 +6,6 @@
 // Divison quotient: 5
 // Divison remainder: 4
 
-
 #include <iostream>
 
 using namespace std;
@@ -17,7 +16,7 @@ int main()
 
     cout << "Dividend: ", cin >> dividend;
     cout << "Divisor: ", cin >> divisor;
-    
+
     int quotient = (dividend / divisor), remainder = (dividend % divisor);
 
     cout << "Division quotient: " << quotient << "\nDivision remainder: " << remainder << endl;

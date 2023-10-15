@@ -6,17 +6,17 @@
 // 1
 
 #include <iostream>
- 
+
 using namespace std;
 
 int main()
 {
 	int a, b, c, d;
- 
+
 	cout << "First interval: ", cin >> a >> b;
 	cout << "Second interval: ", cin >> c >> d;
- 
+
 	bool isTrue = (c < b) || (c < a) || (a < d) || (a < c);
- 
+
 	cout << isTrue << endl;
 }

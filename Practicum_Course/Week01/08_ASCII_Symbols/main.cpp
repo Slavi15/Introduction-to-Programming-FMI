@@ -11,10 +11,10 @@ using namespace std;
 int main()
 {
 	char a, b, c, d, f, z;
- 
+
 	cin >> a >> b >> c >> d >> f >> z;
- 
+
 	bool isOdd = ((a + b + c + d + f + z) % 3 == 0);
- 
+
 	cout << isOdd << endl;
 }

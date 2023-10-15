@@ -5,16 +5,16 @@
 // 1
 
 #include <iostream>
- 
+
 using namespace std;
 
 int main()
 {
 	int a, b, c, d, e;
- 
+
 	cin >> a >> b >> c >> d >> e;
- 
+
 	bool isValid = (a + b == c) && (b + c == d) && (c + d == e);
- 
+
 	cout << isValid << endl;
 }

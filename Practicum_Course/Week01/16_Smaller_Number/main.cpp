@@ -12,9 +12,9 @@ using namespace std;
 int main()
 {
 	int n, m;
- 
+
 	cout << "n: ", cin >> n;
 	cout << "m: ", cin >> m;
- 
+
 	(n < m) && cout << n << " is the smaller number" << endl || cout << m << " is the smaller number" << endl;
 }
