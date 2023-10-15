@@ -16,11 +16,7 @@ int main()
  
 	int result = 0;
  
-	(a % 2 != 0) && (result += a);
-	(b % 2 != 0) && (result += b);
-	(c % 2 != 0) && (result += c);
-	(d % 2 != 0) && (result += d);
-	(e % 2 != 0) && (result += e);
+	result = (a * (a % 2)) + (b * (b % 2)) + (c * (c % 2)) + (d * (d % 2)) + (e * (e % 2));
  
 	cout << result << endl;
 }
