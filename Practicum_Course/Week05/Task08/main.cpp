@@ -4,9 +4,9 @@ using namespace std;
 
 int getSwaps(int n, int b1, int b2);
 bool areValid(int n, int binaryOne, int binaryTwo);
-int calculateDecimalNumber(int n, int binary);
+// int calculateDecimalNumber(int n, int binary);
 int getZeros(int binary, int n);
-int power(int base, int exp);
+// int power(int base, int exp);
 
 int main()
 {
@@ -39,7 +39,7 @@ int getSwaps(int n, int b1, int b2)
 
 bool areValid(int n, int binaryOne, int binaryTwo)
 {
-    return calculateDecimalNumber(n, binaryOne) != calculateDecimalNumber(n, binaryTwo) && getZeros(binaryOne, n) == getZeros(binaryTwo, n);
+    return binaryOne != binaryTwo && getZeros(binaryOne, n) == getZeros(binaryTwo, n);
 }
 
 int getZeros(int binary, int n)
@@ -55,29 +55,29 @@ int getZeros(int binary, int n)
     return zeros;
 }
 
-int calculateDecimalNumber(int n, int binary)
-{
-    int sum = 0;
+// int calculateDecimalNumber(int n, int binary)
+// {
+//     int sum = 0;
 
-    for (int i = 0; i < n; i++)
-    {
-        if (binary % 10 == 1)
-            sum += power(2, i);
-        binary /= 10;
-    }
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (binary % 10 == 1)
+//             sum += power(2, i);
+//         binary /= 10;
+//     }
 
-    return sum;
-}
+//     return sum;
+// }
 
-int power(int base, int exp)
-{
-    if (exp == 0)
-        return 1;
+// int power(int base, int exp)
+// {
+//     if (exp == 0)
+//         return 1;
 
-    int result = 1;
+//     int result = 1;
 
-    for (int i = 1; i <= exp; i++)
-        result *= base;
+//     for (int i = 1; i <= exp; i++)
+//         result *= base;
 
-    return result;
-}
+//     return result;
+// }
